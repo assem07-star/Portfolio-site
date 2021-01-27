@@ -1,0 +1,315 @@
+/* Start Responsive */
+
+@media (max-width: 576px) {
+  .header .info h1 {
+    font-size: 3.5rem !important;
+  }
+  .header .info p {
+    font-size: 1.3rem !important;
+  }
+  .heading p {
+    font-size: 0.9rem !important;
+  }
+  .heading h2 {
+    font-size: 2.5rem !important;
+  }
+  .services .heading p {
+    font-size: 0.8rem;
+  }
+}
+/* Extra Small & Small */
+@media (max-width: 767px) {
+  /* Header & Nav */
+  nav.bg {
+    z-index: 777;
+  }
+  nav ul.menu {
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    /* display: block; */
+    padding: 6.25em 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    /* color: #111; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    z-index: 775;
+  }
+  nav .menu.active {
+    left: 0;
+  }
+  nav ul li {
+    margin-bottom: 1em;
+  }
+  nav ul li a {
+    color: #111;
+    font-size: 1.7rem;
+  }
+  nav .toggle {
+    width: 40px;
+    height: 40px;
+    background: url(../images/menu.png) no-repeat center center;
+    cursor: pointer;
+  }
+  nav .toggle.active {
+    background: url(../images/close.png) no-repeat center center;
+    background-size: 28px;
+    cursor: pointer;
+  }
+  nav.bg .toggle {
+    filter: invert(1);
+  }
+  .header .info h1 {
+    font-size: 4rem;
+  }
+  .header .info p {
+    font-size: 1.8rem;
+  }
+  /* About Section */
+  .about-us .box {
+    flex-basis: 100%;
+  }
+
+  .about-us .box:first-of-type {
+    margin-bottom: 2em;
+    padding-right: 0;
+    padding-top: 0;
+  }
+
+  /* Services Section */
+  .services .box-img:first-of-type,
+  .services .box-img:nth-of-type(2),
+  .services .box-img:nth-of-type(3) {
+    margin-bottom: 0;
+  }
+  .services .box-img {
+    flex-basis: 100%;
+    margin-bottom: 2em !important;
+  }
+
+  /* Work Section */
+  .work .img-box {
+    flex-basis: 100%;
+    margin-bottom: 2em;
+  }
+  /* Testimonial Section */
+  .testimonials .box-review {
+    flex-basis: 100%;
+    margin-bottom: 2em;
+  }
+  /* Our Blog Section */
+  .blog .row .box-blog {
+    flex-basis: 100%;
+    margin-bottom: 2em;
+  }
+  /* Our Contact Section */
+  .contact .contact-box {
+    flex-basis: 100%;
+    margin-bottom: 3em;
+  }
+  .contact .form {
+    flex-basis: 100%;
+    padding-left: 0;
+  }
+  /* Footer Section */
+  footer {
+    padding: 1.5em 0;
+  }
+  footer .row {
+    flex-direction: column;
+  }
+  footer .my-footer p {
+    margin-bottom: 1em;
+  }
+}
+
+/* ------------------ New Media-query ------------------ */
+
+/* Small & Medium */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Header & Nav */
+  nav .logo a {
+    font-size: 1.8rem;
+  }
+  nav ul li a {
+    font-size: 1.1rem;
+  }
+  .btn1 {
+    font-size: 0.9rem;
+  }
+  .header .info span {
+    font-size: 1.2rem;
+  }
+  .header .info h1 {
+    font-size: 4rem;
+  }
+  .header .info p {
+    font-size: 1.5rem;
+  }
+
+  /* About Section*/
+  .heading h2 {
+    font-size: 2rem;
+  }
+  .about-us .box:first-of-type {
+    padding-right: 0.5em;
+    padding-top: 0em;
+  }
+  .about-us .box h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.3em;
+  }
+  .about-us .box p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .about-us .box img {
+    height: 300px;
+  }
+
+  /* Services Section */
+  .heading p {
+    font-size: 1.1rem;
+  }
+
+  .services .box-img:first-of-type,
+  .services .box-img:nth-of-type(2),
+  .services .box-img:nth-of-type(3) {
+    margin-bottom: 0;
+  }
+  .services .box-img {
+    flex-basis: 47%;
+    padding: 1.8em 1.3em;
+    margin-bottom: 2em !important;
+  }
+  .services .box-img img {
+    width: 70px;
+  }
+  .work .img-box {
+    flex-basis: 48%;
+  }
+  .work .img-box:last-child {
+    margin-left: 26%;
+  }
+
+  /* Testimonial Section */
+  .testimonials .box-review {
+    flex-basis: 48%;
+    margin-bottom: 2em;
+    padding: 1.8em 1em;
+  }
+  .testimonials .box-review:last-of-type {
+    margin-left: 26%;
+  }
+
+  /* Blog Section */
+  .blog .row .box-blog {
+    flex-basis: 48%;
+    margin-bottom: 2em;
+    padding: 0.8em;
+  }
+  .blog .row .box-blog:last-of-type {
+    margin-left: 26%;
+  }
+  .blog .box-blog span {
+    font-size: 0.8rem;
+  }
+
+  /* Contact Section */
+  .contact .contact-box h3,
+  .contact .form h3 {
+    font-size: 1.1rem;
+  }
+  .contact .form {
+    flex-basis: 50%;
+    padding-left: 0;
+  }
+  .contact .contact-box {
+    flex-basis: 50%;
+    padding-right: 2em;
+  }
+  .contact .contact-box .row {
+    justify-content: space-between;
+  }
+}
+
+/* ------------------ New Media-query ------------------ */
+
+/* Medium & Large */
+@media (min-width: 992px) and (max-width: 1999px) {
+  /* Header & Nav */
+  nav .logo a {
+    font-size: 1.9rem;
+  }
+  nav ul li a {
+    font-size: 1.2rem;
+  }
+  .btn1 {
+    font-size: 0.95rem;
+  }
+  .header .info span {
+    font-size: 1.3rem;
+  }
+  .header .info h1 {
+    font-size: 4.5rem;
+  }
+  .header .info p {
+    font-size: 1.7rem;
+  }
+
+  /* About Section*/
+  .heading h2 {
+    font-size: 2.4rem;
+  }
+  .about-us .box:first-of-type {
+    padding-right: 2em;
+    padding-top: 1em;
+  }
+  .about-us .box h3 {
+    font-size: 1.6rem;
+  }
+  .about-us .box p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  /* Services Section */
+  .heading p {
+    font-size: 1.2rem;
+  }
+  .services .box-img img {
+    width: 80px;
+  }
+
+  /* Testimonial Section */
+  .testimonials .box-review {
+    padding: 1.8em 1em;
+  }
+
+  /* Blog Section */
+  .blog .row .box-blog {
+    padding: 0.8em;
+  }
+  .blog .box-blog span {
+    font-size: 0.8rem;
+  }
+
+  /* Contact Section */
+  .contact .contact-box h3,
+  .contact .form h3 {
+    font-size: 1.3rem;
+  }
+}
+
+/* ------------------ New Media-query ------------------ */
+
+/* Large & Extrat Large */
+@media (min-width: 1200px) {
+}
